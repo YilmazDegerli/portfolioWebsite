@@ -1,1 +1,2 @@
 # portfolioWebsite
+Hi everyone, I'm going to create a responsive personal portfolio website using HTML, CSS and some JavaScript. There will be pages about my football life, my volunteer work, my continuing education, and the powercoders bootcamp. I will link all the pages together through the navigation menu. I think it will be like a resume. My site will run on most common mobile and desktop browsers and will be hosted on Github and installed on Netlify.
