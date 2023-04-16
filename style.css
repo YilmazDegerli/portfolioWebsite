@@ -72,15 +72,11 @@ section{
     padding: 150px 15% 120px;
 }
 .home{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-size:cover;
-    background-position:center;
-    background-image: url(img/Yilmaz\ Photoriver.jpeg);
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items:center;
+    gap: 1.5rem;
+    background: var(--second-bgcolor);
 }
 .home-text h1{
     font-size: var(--bigfont);
@@ -94,6 +90,12 @@ section{
     color:var(--secondcolor);
     line-height: 1.6;
     margin-bottom: 35px;
+}
+.home-img img{
+    max-width: 450px; 
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
 }
 /* .button{
     display: inline-block;
@@ -362,19 +364,16 @@ header.sticky{
     .home-text h3{
         font-size: 2.5rem;
     }
-    .home{
-        height: 87vh;
-    }
 }
 @media (max-width: 920px){
-    .education{
+    .education, .home{
         grid-template-columns: 1fr;
     }
-    .education-img{
+    /* .education-img, .home-img{
         text-align: center;
         order: 2;
-    }
-    .education-img img{
+    } */
+    .education-img img, .home-img img{
         width: 100%;
         height: auto;
         max-width: 100%;
