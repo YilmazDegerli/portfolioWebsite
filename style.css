@@ -127,7 +127,7 @@ header.sticky{
    gap: 1.5rem;
 }
 .education-img img{
-    max-width: 450px; 
+    max-width: 600px; 
     height: auto;
     width: 100%;
     border-radius: 8px;
@@ -148,6 +148,33 @@ header.sticky{
     font-size: var(--pfont);
     line-height: 1.8;
     margin-bottom: 4rem;
+}
+.education-content{
+    background: var(--second-bgcolor);
+}
+.education-content2{
+    background: var(--bgcolor);
+}
+.education-text2 p{
+    color: var(--secondcolor);
+    font-size: var(--pfont);
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+}
+.education-text2 a{
+    color:var(--textcolor);
+}
+.education-text2 a:hover{
+    color:rgb(34, 34, 180);
+}
+.education-footer, .hiking-footer{
+    padding: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: var(--second-bgcolor);
 }
 .job{
     background: var(--second-bgcolor);
@@ -366,14 +393,14 @@ header.sticky{
     }
 }
 @media (max-width: 920px){
-    .education, .home, .football_1, .football_2{
+    .education, .home, .football{
         grid-template-columns: 1fr;
     }
     /* .education-img, .home-img{
         text-align: center;
         order: 2;
     } */
-    .education-img img, .home-img img, .football-img img, .football-img2 img, .football-img3 img{
+    .education-img img, .home-img img, .football-img img{
         width: 100%;
         height: auto;
         max-width: 100%;
@@ -420,7 +447,7 @@ header.sticky{
 .rempeople-text p{
     font-size:var(--pfont);
     text-align: justify;
-    color:var(--textcolor);
+    color:var(--secondcolor);
     line-height: 1.6;
     margin-bottom: 15px;
 }
@@ -430,7 +457,7 @@ header.sticky{
 .ugurlu-text p{
     font-size:var(--pfont);
     text-align: justify;
-    color:var(--textcolor);
+    color:var(--secondcolor);
     line-height: 1.6;
     margin-bottom: 25px;
 }
@@ -440,16 +467,17 @@ header.sticky{
 .ministry-text p{
     font-size:var(--pfont);
     text-align: justify;
-    color:var(--textcolor);
+    color:var(--secondcolor);
     line-height: 1.6;
     margin-bottom: 15px;
 }
-.ministry-list{
+.ministry-list, .education-list{
     padding-left: 2rem;
 }
-.ministry-list li{
+.ministry-list li, .education-list li{
     list-style:square;
     padding-bottom: 1.2rem;
+    color:var(--secondcolor);
 }
 .football{
     display: grid;
@@ -489,12 +517,15 @@ header.sticky{
     width: 100%;
     border-radius: 8px;
 }
-.hiking{
+.hiking, .hiking2{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items:flex-start;
     gap: 1.5rem;
     background: var(--second-bgcolor);
+}
+.hiking2{
+    background: var(--bgcolor);
 }
 .hiking-text p{
     font-size:var(--pfont);
@@ -508,7 +539,6 @@ header.sticky{
     width: 100%;
     border-radius: 8px;
 }
-
 
 /* Style The Dropdown Button */
 .dropbtn {
