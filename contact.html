@@ -18,21 +18,23 @@
     
     <!--Header-->
     <header>
-
+        
         <a href="#" class="logo">Yilmaz <span>DEGERLI</span></a>
 
         <ul class="navlist">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./education.html">Education Life</a></li>
+            <li>
             <div class="dropdown">
                 <button class="dropbtn">Job Experiences</button>
                 <div class="dropdown-content">
-                  <a href="./ministry.html" class="active">Min. of Trade</a>
+                  <a href="./ministry.html">Min. of Trade</a>
                   <a href="./ugurlu.html">Ugurlu</a>
                   <a href="./rempeople.html">Rem People</a>
                 </div>
             </div>
-
+            </li>
+            <li>
             <div class="dropdown">
                 <button class="dropbtn">Hobbies</button>
                 <div class="dropdown-content">
@@ -41,15 +43,14 @@
                   <a href="./hiking.html">Hiking</a>
                 </div>
             </div>
-            
-            <li><a href="./contact.html">Contact</a></li>
+            </li>
+            <li><a href="./contact.html" class="active">Contact</a></li>
         </ul>
 
         <div class="bx bx-menu" id="menu-icon"></div>
 
     </header>
 
- 
  <!--Contact Section-->
 
  <section class="contact" id="contact">
@@ -74,21 +75,21 @@
 
     <div class="contact-form">
 
-        <form action="">
+        <form action="https://formsubmit.co/yilmazdegerli@powecoders.org" method="POST">
 
-            <input type="name" placeholder="Your Name" required>
+            <input type="text" name="yourname" placeholder="Your Name" required>
 
-            <input type="email" placeholder="Your Email Address" required>
+            <input type="email" name="email"    placeholder="Your Email Address" required>
 
-            <input type="number" placeholder="Your Phone Number" required>
+            <input type="text" name="text" placeholder="Your Phone Number" required>
 
-            <textarea name="" id="" cols="30" rows="10" placeholder="How can I help you?" required></textarea>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="How can I help you?" required></textarea>
 
-            <input type="submit" value="Send Message" class="submit" required>
+            <input type="text" name="submit" value="Send Message" class="submit" required>
         </form>
 
     </div>
-
+    
 </section>
 
 <!--Footer-->
@@ -108,3 +109,7 @@
     </div> 
 
 </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

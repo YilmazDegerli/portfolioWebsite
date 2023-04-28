@@ -365,82 +365,8 @@ header.sticky{
     color: var(--textcolor);
     background: var(--maincolor);
 }
-@media (max-width: 1480px){
-    header{
-        padding:12px 2.5%;
-        transition: .1s;
-    }
-    header.sticky{
-        padding: 10px 2.5%;
-        transition: .1s;
-    }
-    section{
-        padding: 110px 3% 60px;
-    }
-    .footer{
-        padding: 15px 3%;
-    }
-}
-@media (max-width: 1100px){
-    :root{
-        --big-font: 4rem;
-        --h2-font: 2.5rem;
-        --p-font: 1rem;
-        transition: .1s;
-    }
-    .home-text h3{
-        font-size: 2.5rem;
-    }
-}
-@media (max-width: 920px){
-    .education, .home, .football{
-        grid-template-columns: 1fr;
-    }
-    /* .education-img, .home-img{
-        text-align: center;
-        order: 2;
-    } */
-    .education-img img, .home-img img, .football-img img{
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-    }
-    .contact{
-        grid-template-columns: 1fr;
-    }
-}
-@media (max-width: 840px){
-    #menu-icon{
-        display: block;
-    }
-    .navlist{
-        position: absolute;
-        top: -1000px;
-        right: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        background: var(--bgcolor);
-        text-align: left;
-        transition: all .50s ease;
-    }
-    .navlist a{
-        display: block;
-        margin: 17px;
-        font-size: 20px;
-        transition: all .50s ease;
-        color: var(--textcolor);
-    }
-    .navlist a:hover{
-        color: var(--maincolor);
-    }
-    .navlist a.active{
-        color: var(--textcolor);
-    }
-    .navlist.open{
-        top: 100%;
-    }
-}
+
+
 .rempeople{
     background: var(--second-bgcolor);
 }
@@ -564,6 +490,8 @@ header.sticky{
     position: absolute;
     min-width: 120px;
     z-index: 1;
+    background:var(--maincolor);
+    border-radius: 8px;
   }
   
   /* Links inside the dropdown */
@@ -575,7 +503,8 @@ header.sticky{
   
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {
-    background-color: var(--second-bgcolor)
+    color: var(--maincolor);
+    background: #fff;
 } 
 
   /* Show the dropdown menu on hover */
@@ -590,3 +519,80 @@ header.sticky{
   .dropbtn:hover{
     color:#c60c56;
   }
+
+  @media (max-width: 1480px){
+    header{
+        padding:12px 2.5%;
+        transition: .1s;
+    }
+    header.sticky{
+        padding: 10px 2.5%;
+        transition: .1s;
+    }
+    section{
+        padding: 110px 3% 60px;
+    }
+    .footer{
+        padding: 15px 3%;
+    }
+}
+@media (max-width: 1100px){
+    :root{
+        --big-font: 4rem;
+        --h2-font: 2.5rem;
+        --p-font: 1rem;
+        transition: .1s;
+    }
+    .home-text h3{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 920px){
+    .education, .home, .contact, .football, .voluntary, .hiking, .hiking2{
+        grid-template-columns: 1fr;
+    }
+    .education-img, .home-img{
+        text-align: center;
+        order: 2;
+    }
+    .education-img img, .home-img img, .football-img img, .voluntary-img img, .hiking-img img, .hiking-img2 img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+ }
+@media (max-width: 840px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bgcolor);
+        text-align:left;
+        transition: all .50s ease;
+    }
+    .navlist a{
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .50s ease;
+        color: var(--secondcolor);
+    }
+    .navlist a:hover{
+        color: var(--maincolor);
+    }
+    .navlist a.active{
+        color: var(--textcolor);
+    }
+    .navlist.open{
+        top: 100%;
+    }
+    .dropbtn{
+        margin: 16px 16px;
+    }
+}
