@@ -97,24 +97,7 @@ section{
     width: 100%;
     border-radius: 8px;
 }
-/* .button{
-    display: inline-block;
-    padding: 12px 28px;
-    align-items: center;
-    justify-content: center;
-    color:var(--secondcolor);
-    background-color: var(--maincolor);
-    border-radius: 8px;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    font-weight: 600;
-    transition: all .50 ease;
-}
-.button:hover{
-    transform: scale(0.9);
-    color: var(--textcolor);
-    cursor: pointer;
-} */
+
 header.sticky{
     background: var(--bgcolor);
     border-bottom: 1px solid #fff;
@@ -365,8 +348,6 @@ header.sticky{
     color: var(--textcolor);
     background: var(--maincolor);
 }
-
-
 .rempeople{
     background: var(--second-bgcolor);
 }
@@ -419,7 +400,7 @@ header.sticky{
     margin-bottom: 35px;
 }
 .football-img img{
-    max-width: auto; 
+    object-fit: cover;
     max-height: 550px;
     width: 100%;
     border-radius: 8px;
@@ -438,7 +419,7 @@ header.sticky{
     margin-bottom: 35px;
 }
 .voluntary-img img{
-    max-width: auto; 
+    object-fit: cover;
     height: 500px;
     width: 100%;
     border-radius: 8px;
@@ -460,7 +441,7 @@ header.sticky{
     margin-bottom: 35px;
 }
 .hiking-img img, .hiking-img2 img{
-    max-width: auto; 
+    object-fit: cover; 
     height: 500px;
     width: 100%;
     border-radius: 8px;
@@ -487,7 +468,7 @@ header.sticky{
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
-    position: absolute;
+    position:absolute;
     min-width: 120px;
     z-index: 1;
     background:var(--maincolor);
@@ -498,7 +479,6 @@ header.sticky{
   .dropdown-content a{
     font-size: 18px;
     margin: 0 35px;
-    
 }
   
   /* Change color of dropdown links on hover */
