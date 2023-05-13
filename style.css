@@ -167,6 +167,12 @@ header.sticky{
     margin-bottom: 15px;
     font-size: var(--h2font);
 }
+.job-text p{
+    font-size:var(--pfont);
+    color:var(--secondcolor);
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
 .job-content{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px, auto));
@@ -319,7 +325,9 @@ header.sticky{
     font-size: 16px;
     background: var(--maincolor);
     color: var(--secondcolor);
-    width: 160px;
+    width: 40%;
+    border-radius: 10px;
+    padding: 10px;
     transition: all .50s ease;
 }
 .contact-form .submit:hover{
@@ -473,12 +481,14 @@ header.sticky{
     z-index: 1;
     background:var(--maincolor);
     border-radius: 8px;
+    line-height: 2.5rem;
   }
   
   /* Links inside the dropdown */
   .dropdown-content a{
     font-size: 18px;
-    margin: 0 35px;
+    margin: 0 25px;
+    padding:5px 10px;
 }
   
   /* Change color of dropdown links on hover */
